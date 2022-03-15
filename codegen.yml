@@ -1,0 +1,12 @@
+overwrite: true
+schema: 'https://rickandmortyapi.com/graphql'
+documents: 'graphql/**/*.graphql'
+generates:
+  generated/graphql.tsx:
+    config:
+      reactApolloVersion: 3
+      withHooks: true
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
